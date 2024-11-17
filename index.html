@@ -12,7 +12,7 @@
         <form action="post">
             <div>
                 <label for="username">Enter your Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username">
+                <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus>
             </div>
             <div>
                 <input type="radio" id="male" name="gender" value="male">
@@ -20,14 +20,24 @@
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="male">Female</label>
             </div>
-
-
-
-
-
-
-            
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">subscribe to newsletter</label>
+            </div>
+            <div>
+                <label for="comment">enter your comment</label>
+                <br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="fruits">select fruit</label>
+                <select name="fruits" id="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                </select>
+            </div>   
         </form>
        <script src="script.js"></script>
     </body>
-</html> 
+</html>
